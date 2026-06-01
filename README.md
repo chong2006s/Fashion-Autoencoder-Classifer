@@ -10,7 +10,6 @@ Latent Classifier: Predicts clothing categories from the latent vectors.
 CNN Baseline: A standard convolutional neural network trained directly on raw images, used as a benchmark.
 
 📊 Results
-Model	Reconstruction Loss	Classification Loss	Classification Accuracy
 Autoencoder + LatentClassifier	0.0060	0.2968	0.8926 (~89%)
 CNN Baseline (raw pixels)	–	0.0443	0.9849 (~98%)
 
