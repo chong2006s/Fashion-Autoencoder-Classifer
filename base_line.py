@@ -41,7 +41,7 @@ class ConvolutionalNetwork(nn.Module):
 cnn_model = ConvolutionalNetwork().to(device)
 
 def train_and_evaluate(model, name, epochs=3):
-    print(f"\n🚀 Training {name}...")
+    print(f"\n Training {name}...")
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters())
     
@@ -81,7 +81,7 @@ def train_and_evaluate(model, name, epochs=3):
             
     final_loss = test_loss / len(test_loader.dataset)
     final_acc = correct / total
-    print(f"🏁 {name} Final Results -> Test loss: {final_loss:.4f} - Test accuracy: {final_acc:.4f}")
+    print(f" {name} Final Results -> Test loss: {final_loss:.4f} - Test accuracy: {final_acc:.4f}")
 
 train_and_evaluate(cnn_model, "Convolutional CNN")
 
